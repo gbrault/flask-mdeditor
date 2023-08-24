@@ -20,7 +20,8 @@ class _MDEditor():
         # print(render_template('markdown.html'))
         if not kwargs.get('name'):
             kwargs['name'] = 'mdeditor'
-        return Markup(render_template('markdown.html', **kwargs))
+        # return Markup(render_template('markdown.html', **kwargs))
+        return render_template('meditor/markdown.html', **kwargs)
 
     @property
     def config(self):
